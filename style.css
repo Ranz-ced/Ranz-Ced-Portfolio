@@ -1,0 +1,123 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ab9f92;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #3f3b3b;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00adb5;
+}
+
+/* Menu Toggle (Mobile) */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Sections */
+.content-section {
+  display: none;
+  padding: 3rem 2rem;
+  min-height: calc(100vh - 70px);
+}
+
+.content-section.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: #302e2e;
+    width: 200px;
+    transition: right 0.3s ease;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+/* === Image Styles Only === */
+
+/* Make all images responsive and scaled correctly */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px; /* optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: subtle shadow */
+}
+
+/* Optional: If images need to be centered vertically too */
+.image-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
