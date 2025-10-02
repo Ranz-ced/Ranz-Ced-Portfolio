@@ -12,7 +12,7 @@ My Portfolio: https://ranz-ced.github.io/Ranz-Ced-Portfolio/
 * Visual Studio Code
 # Contact
 * Email: ranzcedrichernandez18@gmail.com
-* GitHub: https://github.com/Ranz-ced/Ranz-Ced-Portfolio
+* GitHub: https://github.com/Ranz-ced/Ranz-Ced-Portfolio/
 # Reflection
 Making my portfolio website using GitHub Pages was a great learning experience and something I’m proud of. By following the step-by-step guide, I learned how to build and organize a website, and how to show my work in a clear way. At first, it was a bit hard to set up the repository and upload my files because I had to be careful with the file names and folder structure. But by taking my time and exploring GitHub, I was able to figure it out.
 
